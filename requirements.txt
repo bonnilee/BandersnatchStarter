@@ -10,7 +10,9 @@ babel==2.17.0
 beautifulsoup4==4.14.3
 bleach==6.3.0
 blinker==1.9.0
-BloomtechMonsterLab @ file:///C:/Users/Owner/Documents/labs%20ds/BandersnatchStarter/bloomtechmonsterlab-1.0.0-py3-none-any.whl#sha256=0b0d1aceee55af53d44e78e810d213500ac8d4774f7311583cf45ae2f1406711
+git+https://github.com/BloomTech-Labs/BloomtechMonsterLab.git@main
+
+#BloomtechMonsterLab @ file:///C:/Users/Owner/Documents/labs%20ds/BandersnatchStarter/bloomtechmonsterlab-1.0.0-py3-none-any.whl#sha256=0b0d1aceee55af53d44e78e810d213500ac8d4774f7311583cf45ae2f1406711
 certifi==2025.11.12
 cffi==2.0.0
 charset-normalizer==3.4.4
