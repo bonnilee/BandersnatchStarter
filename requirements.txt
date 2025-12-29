@@ -12,7 +12,8 @@ bleach==6.3.0
 blinker==1.9.0
 #git+https://github.com/BloomTech-Labs/BloomtechMonsterLab.git@main
 #https://github.com/BloomTech-Labs/BloomtechMonsterLab/archive/refs/heads/main.zip
-https://github.com/BloomTech-Labs/BloomtechMonsterLab/archive/refs/heads/main.zip
+
+https://github.com/BloomTech-Labs/BloomtechMonsterLab/archive/refs/heads/master.zip
 
 
 certifi==2025.11.12
