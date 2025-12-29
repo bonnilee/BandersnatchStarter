@@ -10,10 +10,7 @@ babel==2.17.0
 beautifulsoup4==4.14.3
 bleach==6.3.0
 blinker==1.9.0
-#git+https://github.com/BloomTech-Labs/BloomtechMonsterLab.git@main
-#https://github.com/BloomTech-Labs/BloomtechMonsterLab/archive/refs/heads/main.zip
 
-#https://github.com/BloomTech-Labs/BloomtechMonsterLab/archive/refs/heads/master.zip
 BloomtechMonsterLab==1.0.0
 
 
