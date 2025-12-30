@@ -22,6 +22,10 @@ WORKDIR /app
 # Copy project files
 COPY . /app
 
+# Copy local BloomtechMonsterLab wheel into image
+# (make sure the wheel file is in ./vendor/ in your repo)
+COPY vendor ./vendor
+
 # Upgrade pip and install dependencies
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
@@ -31,3 +35,4 @@ EXPOSE 8000
 
 # Start the Flask app
 CMD ["gunicorn", "app.main:APP", "-b", "0.0.0.0:8000", "--workers", "1"]
+
