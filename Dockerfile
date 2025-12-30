@@ -1,7 +1,7 @@
 # Use official Python 3.13 slim image
 FROM python:3.13-slim
 
-# Install system dependencies (Rust, git, build tools)
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
     curl \
@@ -22,10 +22,6 @@ WORKDIR /app
 # Copy project files
 COPY . /app
 
-# Copy local BloomtechMonsterLab wheel into image
-# (make sure the wheel file is in ./vendor/ in your repo)
-COPY vendor ./vendor
-
 # Upgrade pip and install dependencies
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
@@ -33,6 +29,11 @@ RUN pip install -r requirements.txt
 # Expose Flask port
 EXPOSE 8000
 
+# Environment variables
+ENV FLASK_APP=app.main:APP
+ENV FLASK_ENV=production
+
 # Start the Flask app
 CMD ["gunicorn", "app.main:APP", "-b", "0.0.0.0:8000", "--workers", "1"]
+
 

@@ -11,10 +11,8 @@ beautifulsoup4==4.14.3
 bleach==6.3.0
 blinker==1.9.0
 
+# Use local wheel for BloomtechMonsterLab
 BloomtechMonsterLab @ file:vendor/bloomtechmonsterlab-1.0.0-py3-none-any.whl
-
-
-
 
 certifi==2025.11.12
 cffi==2.0.0
@@ -88,7 +86,6 @@ python-dateutil==2.9.0.post0
 python-dotenv==1.2.1
 python-json-logger==4.0.0
 pytz==2025.2
-pywinpty==3.0.2
 PyYAML==6.0.3
 pyzmq==27.1.0
 referencing==0.37.0
@@ -121,3 +118,5 @@ websocket-client==1.9.0
 Werkzeug==3.1.4
 wheel==0.45.1
 widgetsnbextension==4.0.15
+ptyprocess==0.7.0  # replaces pywinpty for Linux
+
