@@ -16,9 +16,9 @@ class Database:
 
     """MongoDB interface for monster data."""
 
-    def __init__(self, collection: str = "monsters"):
+    def __init__(self, collection: str = "monsters", db_name: str = "bandersnatch"):
         client = MongoClient(getenv("DB_URL"), tlsCAFile=where())
-        self.collection = client.get_default_database()[collection]
+        self.collection = client[db_name][collection]
 
     def seed(self, count: int = 1000) -> None:
         """Insert `count` randomly generated monsters into the collection."""
